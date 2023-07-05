@@ -1,0 +1,72 @@
+:root {
+    --lightBlue: #e9f2fa;
+    --padding: 25px;
+    --greyBorder: #F7F7F7 ;
+    --grey: #7B7C80;
+    --white: #ffff;
+    --fontSize: 12px;
+    --borderRadius: 0.5em;
+    --boxShadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    --containerPadding: 16px 80px 56px 80px
+}
+
+.container_sessionTable{
+
+    background-color: var(--lightBlue);
+}
+
+.container{
+    background-color: white;
+    border-radius:calc(2*var(--borderRadius));
+    border: var(--greyBorder) solid;
+    /* box-shadow: var(--boxShadow); */
+    width: fit-content;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ 
+    padding: var(--containerPadding);
+
+}
+.sessionTable{
+    /* border-radius: 20px; */
+    border-collapse: collapse;
+    border-radius: var(--borderRadius);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+td,th{
+    font-size: var(--fontSize);
+}
+td{
+    /* border: var(--greyBorder) solid ;
+    padding: 1em;
+    border-radius: 20px;
+    border-collapse: collapse; */
+    
+    padding: 1em;
+    text-align: center;
+    font-weight: 500;
+    color: var(--grey);
+    
+}
+/* table head css*/
+
+th {
+    
+    text-align:left;
+    padding: 0.5em 4em;
+    background-color: #556D77;
+    color: white;
+
+    font-weight: 500;
+}
+/* table body css*/
+tbody > tr:nth-child(even) {
+    background-color: var(--greyBorder);
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: var(--white);
+}

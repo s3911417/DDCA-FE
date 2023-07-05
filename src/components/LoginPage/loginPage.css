@@ -1,0 +1,70 @@
+:root {
+    --padding: 25px;
+    --secondary: #6EC7DF;
+    --inputHeight: 48px
+}
+
+.login_container {
+    height: fit-content;
+    max-height: 90%;
+    width: 400px;
+    display: flex;
+    gap: var(--padding);
+    flex-direction: column;
+    padding-top: var(--padding);
+    padding-bottom: calc(2*var(--padding));
+    justify-content: center;
+    box-shadow: 0px 0px 30px rgba(156, 213, 255, 0.5);
+    background-color: #fdfdfd;
+    min-height: 450px;
+}
+
+.img {
+    align-self: center;
+}
+
+.login_button {
+    background: var(--secondary);
+    border-radius: 10px;
+    border: solid black;
+    padding: 12px;
+    color: #fdfdfd;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    height: var(--inputHeight);
+    border-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+.login_button:hover {
+    filter: brightness(95%);
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding);
+}
+
+.input {
+    padding: 16px 20px;
+    height: var(--inputHeight);
+    width: 100%;
+    background: #fdfdfd;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    transition: 0.15s;
+    outline-color: #fdfdfd;
+
+
+}
+
+.input:focus {
+    outline-color: var(--secondary);
+
+}
